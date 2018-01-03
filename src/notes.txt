@@ -1,0 +1,11 @@
+{     allMarkdownRemark(limit:100) {
+       edges {
+         node {
+           frontmatter {
+						title
+            path
+           }
+         }
+       }
+     }
+}
