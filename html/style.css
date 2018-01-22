@@ -1,54 +1,115 @@
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 html {
-  line-height: 0px;
+    line-height: 0px;
 }
+
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
+
+
 .container {
-  border: 1px solid red;
-  display: flex;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-end;
+    border: 1px solid red;
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+    justify-content: flex-end;
 }
 
 .fixed-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 33.33%;
-  border: 1px solid yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    border: 1px solid yellow;
+    background: #000000;
+    color: #ffffff;
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid purple;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid purple;
+    min-height: 100vh;
+}
+
+.about h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 200px;
+}
+
+.about img {
+    margin: auto;
+    margin-top: 50px;
 }
 
 .content {
-  display: flex;
-  flex: 0 1 66.66%;
-  flex-wrap: wrap;
-  height: 50%
+    display: flex;
+    flex: 0 1 66.66%;
+    flex-wrap: wrap;
+    height: 50%
 }
 
 .col-one {
-  width: 50%;
-  border: 1px solid green;
-  line-height: 0;
-  min-height: 50vh;
+    width: 50%;
+    border: 1px solid green;
+    line-height: 0;
+    min-height: 50vh;
+}
+
+
+/*Marquee Animation*/
+
+.Marquee {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Marquee .Marquee-content {
+    display: flex;
+    animation: marquee 10s linear infinite running;
+}
+
+.Marquee .Marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.Marquee .Marquee-tag {
+    width: 200px;
+    margin: 0 .2em;
+    padding: .5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+.Marquee .Marquee-tag:hover {
+    background: rgba(255, 255, 255, .5);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@keyframes marquee {
+    0% {transform: translateX(0);}
+    100% {transform: translate(-50%);}
 }
