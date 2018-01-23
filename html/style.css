@@ -85,10 +85,27 @@ img {
 
 .Marquee .Marquee-content {
     display: flex;
-    animation: marquee 10s linear infinite running;
+    animation: marquee 11s linear infinite running;
 }
 
 .Marquee .Marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.Marquee .Marquee-content-two {
+    display: flex;
+    animation: marquee 10s linear infinite running;
+}
+
+.Marquee .Marquee-content-two:hover {
+    animation-play-state: paused;
+}
+.Marquee .Marquee-content-three {
+    display: flex;
+    animation: marquee 9s linear infinite running;
+}
+
+.Marquee .Marquee-content-three:hover {
     animation-play-state: paused;
 }
 
