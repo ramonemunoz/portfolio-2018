@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import me from '../images/me.jpg';
 
-const IndexPage = ({ data }) => (
+const ContactPage = () => (
 	<div className="container">
 		<div className="fixed-container">
 			<div className="about">
@@ -10,10 +10,10 @@ const IndexPage = ({ data }) => (
 				<img src={me} alt="" />
 				<div className="about-link">
 					<h2>
-						<Link to="/about/">ABOUT</Link>
+						<Link to="/">HOME</Link>
 					</h2>
 					<h2>
-						<Link to="/contact/">CONTACT</Link>
+						<Link to="/about/">ABOUT</Link>
 					</h2>
 				</div>
 				<div className="marquee-container">
@@ -101,34 +101,38 @@ const IndexPage = ({ data }) => (
 			</div>
 		</div>
 		<div className="content">
-			{data.allMarkdownRemark.edges.map(post => (
-				<div className="col-two">
-					<Link key={post.node.id} to={post.node.frontmatter.path}>
-						<img src={post.node.frontmatter.imgmain} />
-					</Link>
+			<div className="col-one">
+				<div className="about-container">
+					<h1>Want to get in touch?</h1>
+					<p>Email: ramon@ramon-munoz.com</p>
+					<p>
+						Github:{' '}
+						<a href="https://github.com/ramonemunoz/" target="_blank">
+							https://github.com/ramonemunoz/
+						</a>
+					</p>
+					<p>
+						LinkedIn:{' '}
+						<a href="https://www.linkedin.com/in/ramonemunoz/" target="_blank">
+							https://www.linkedin.com/in/ramonemunoz/
+						</a>
+					</p>
+					<p>
+						Instagram:{' '}
+						<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
+							@ramonemunoz
+						</a>
+					</p>
+					<p>
+						Twitter:{' '}
+						<a href="https://twitter.com/ramonemunoz" target="_blank">
+							@ramonemunoz
+						</a>
+					</p>
 				</div>
-			))}
+			</div>
 		</div>
 	</div>
 );
 
-export const pageQuery = graphql`
-	query IndexQuery {
-		allMarkdownRemark(limit: 10, filter: { frontmatter: { published: { eq: true } } }) {
-			edges {
-				node {
-					html
-					id
-					frontmatter {
-						path
-						title
-						imgmain
-						published
-					}
-				}
-			}
-		}
-	}
-`;
-
-export default IndexPage;
+export default ContactPage;

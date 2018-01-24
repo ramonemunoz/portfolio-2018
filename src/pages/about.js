@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import me from '../images/me.jpg';
 
-const IndexPage = ({ data }) => (
+const AboutPage = () => (
 	<div className="container">
 		<div className="fixed-container">
 			<div className="about">
@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
 				<img src={me} alt="" />
 				<div className="about-link">
 					<h2>
-						<Link to="/about/">ABOUT</Link>
+						<Link to="/">HOME</Link>
 					</h2>
 					<h2>
 						<Link to="/contact/">CONTACT</Link>
@@ -101,34 +101,19 @@ const IndexPage = ({ data }) => (
 			</div>
 		</div>
 		<div className="content">
-			{data.allMarkdownRemark.edges.map(post => (
-				<div className="col-two">
-					<Link key={post.node.id} to={post.node.frontmatter.path}>
-						<img src={post.node.frontmatter.imgmain} />
-					</Link>
+			<div className="col-one">
+				<div className="about-container">
+					<h1>Hi, I’m Ramon</h1>
+					<p>I'm a seasoned front-end developer with many years of real-world design and web development experience.</p>
+					<p>
+						The excitement of seeing my work come to life, online or on a circuit board, is what first sparked my
+						interest in development and design. These days, I transform ideas into realities. That challenge means I’m
+						always learning and expanding my toolset in preparation for my next opportunity.
+					</p>
 				</div>
-			))}
+			</div>
 		</div>
 	</div>
 );
 
-export const pageQuery = graphql`
-	query IndexQuery {
-		allMarkdownRemark(limit: 10, filter: { frontmatter: { published: { eq: true } } }) {
-			edges {
-				node {
-					html
-					id
-					frontmatter {
-						path
-						title
-						imgmain
-						published
-					}
-				}
-			}
-		}
-	}
-`;
-
-export default IndexPage;
+export default AboutPage;
