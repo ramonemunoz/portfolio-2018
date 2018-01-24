@@ -18,6 +18,7 @@ export const postQuery = graphql `
       frontmatter {
         path
         title
+        imgmain
       }
     }
   }
