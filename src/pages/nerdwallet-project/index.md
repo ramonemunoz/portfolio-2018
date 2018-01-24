@@ -3,6 +3,7 @@ path: "/nerdwallet"
 title: "NERDWALLET"
 imgmain: "http://via.placeholder.com/450x450?text=NERDWALLET"
 published: true
+postid: "4"
 ---
 
 NERDWALLET Page

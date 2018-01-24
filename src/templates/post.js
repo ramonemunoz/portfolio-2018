@@ -131,6 +131,7 @@ export const postQuery = graphql`
 				path
 				title
 				imgmain
+				postid
 			}
 		}
 	}

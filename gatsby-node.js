@@ -14,19 +14,25 @@
    const postTemplate = path.resolve('src/templates/post.js');
 
    return graphql(`{
-     allMarkdownRemark {
-       edges {
-         node {
-           html
-           id
-           frontmatter {
-             path
-             title
-             imgmain
-           }
-         }
-       }
-     }
+  allMarkdownRemark(
+    limit: 10,
+    sort: {fields:[frontmatter___postid]},
+    filter: {frontmatter: {published: {eq: true}}}
+    ){
+      edges {
+        node {
+          html
+          id
+          frontmatter {
+            path
+            title
+            imgmain
+            published
+            postid
+          }
+        }
+      }
+    }
    }`)
    .then(res => {
      if(res.errors){

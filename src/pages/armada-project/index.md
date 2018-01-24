@@ -3,6 +3,7 @@ path: "/armada"
 title: "ARMADA"
 imgmain: "http://via.placeholder.com/450x450?text=ARMADA"
 published: true
+postid: "2"
 ---
 
 ARMADA Page

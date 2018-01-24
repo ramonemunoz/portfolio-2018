@@ -103,7 +103,7 @@ const IndexPage = ({ data }) => (
 		<div className="content">
 			{data.allMarkdownRemark.edges.map(post => (
 				<div className="col-two">
-					<Link key={post.node.id} to={post.node.frontmatter.path}>
+					<Link key={post.node.frontmatter.postid} to={post.node.frontmatter.path}>
 						<img src={post.node.frontmatter.imgmain} />
 					</Link>
 				</div>
@@ -114,7 +114,7 @@ const IndexPage = ({ data }) => (
 
 export const pageQuery = graphql`
 	query IndexQuery {
-		allMarkdownRemark(limit: 10, filter: { frontmatter: { published: { eq: true } } }) {
+		allMarkdownRemark(limit: 10, sort: {fields:[frontmatter___postid]}, filter: { frontmatter: { published: { eq: true } } }, ) {
 			edges {
 				node {
 					html
@@ -124,6 +124,7 @@ export const pageQuery = graphql`
 						title
 						imgmain
 						published
+						postid
 					}
 				}
 			}
