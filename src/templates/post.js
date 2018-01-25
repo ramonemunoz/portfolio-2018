@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
+import Marquee from '../components/marquee';
 
 export default function Template({ data }) {
 	const { markdownRemark: post } = data;
@@ -17,89 +18,11 @@ export default function Template({ data }) {
 						<h2>
 							<Link to="/about/">ABOUT</Link>
 						</h2>
+						<h2>
+							<Link to="/contact/">CONTACT</Link>
+						</h2>
 					</div>
-					<div className="marquee-container">
-						<div className="Marquee">
-							<div className="Marquee-content">
-								<div className="Marquee-tag">
-									<a href="#">GITHUB</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">LINKEDIN</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">RESUME</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">GITHUB</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">LINKEDIN</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">RESUME</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">GITHUB</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">LINKEDIN</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">RESUME</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">GITHUB</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">LINKEDIN</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">RESUME</a>
-								</div>
-							</div>
-						</div>
-						<div className="Marquee">
-							<div className="Marquee-content-two">
-								<div className="Marquee-tag">
-									<a href="#">POST</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">12TH STUDIO</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">INSTAGRAM</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">POST</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">12TH STUDIO</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">INSTAGRAM</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">POST</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">12TH STUDIO</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">INSTAGRAM</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">POST</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">12TH STUDIO</a>
-								</div>
-								<div className="Marquee-tag">
-									<a href="#">INSTAGRAM</a>
-								</div>
-							</div>
-						</div>
-					</div>
+					<Marquee />
 				</div>
 			</div>
 			<div className="content">

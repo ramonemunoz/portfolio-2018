@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import me from '../images/me.jpg';
+import Me from '../images/me.jpg';
+import Marquee from '../components/marquee';
 
 const IndexPage = ({ data }) => (
 	<div className="container">
 		<div className="fixed-container">
 			<div className="about">
 				<h1>Ramon Munoz</h1>
-				<img src={me} alt="" />
+				<img src={Me} alt="" />
 				<div className="about-link">
 					<h2>
 						<Link to="/about/">ABOUT</Link>
@@ -16,94 +17,13 @@ const IndexPage = ({ data }) => (
 						<Link to="/contact/">CONTACT</Link>
 					</h2>
 				</div>
-				<div className="marquee-container">
-					<div className="Marquee">
-						<div className="Marquee-content">
-							<div className="Marquee-tag">
-								<a href="#">GITHUB</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">LINKEDIN</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">RESUME</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">GITHUB</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">LINKEDIN</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">RESUME</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">GITHUB</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">LINKEDIN</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">RESUME</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">GITHUB</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">LINKEDIN</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">RESUME</a>
-							</div>
-						</div>
-					</div>
-					<div className="Marquee">
-						<div className="Marquee-content-two">
-							<div className="Marquee-tag">
-								<a href="#">POST</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">12TH STUDIO</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">INSTAGRAM</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">POST</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">12TH STUDIO</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">INSTAGRAM</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">POST</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">12TH STUDIO</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">INSTAGRAM</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">POST</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">12TH STUDIO</a>
-							</div>
-							<div className="Marquee-tag">
-								<a href="#">INSTAGRAM</a>
-							</div>
-						</div>
-					</div>
-				</div>
+				<Marquee />
 			</div>
 		</div>
 		<div className="content">
 			{data.allMarkdownRemark.edges.map(post => (
-				<div className="col-two">
-					<Link key={post.node.frontmatter.postid} to={post.node.frontmatter.path}>
+				<div key={post.node.frontmatter.postid} className="col-two">
+					<Link to={post.node.frontmatter.path}>
 						<img src={post.node.frontmatter.imgmain} />
 					</Link>
 				</div>
@@ -114,7 +34,11 @@ const IndexPage = ({ data }) => (
 
 export const pageQuery = graphql`
 	query IndexQuery {
-		allMarkdownRemark(limit: 10, sort: {fields:[frontmatter___postid]}, filter: { frontmatter: { published: { eq: true } } }, ) {
+		allMarkdownRemark(
+			limit: 10
+			sort: { fields: [frontmatter___postid] }
+			filter: { frontmatter: { published: { eq: true } } }
+		) {
 			edges {
 				node {
 					html
