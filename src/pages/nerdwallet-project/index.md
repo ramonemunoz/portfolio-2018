@@ -6,8 +6,7 @@ published: true
 postid: "4"
 ---
 
-NERDWALLET Page
-We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure
+Nerdwallet, guides and helps people manage and save their money. It uses personalized honest advice and simple tools to assist people into getting the most out of their money.
 
 **Tech:** JSONT, CSS3, JS
 

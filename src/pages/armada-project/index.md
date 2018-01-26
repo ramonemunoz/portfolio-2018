@@ -6,9 +6,7 @@ published: true
 postid: "2"
 ---
 
-ARMADA Page
-
-We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry.
+Armada is family of talented artists and designers who devote their time to making high-quality Outwear and Skis. Armada is available in 40 different nations and fully encompasses the freedom of the sport.
 
 **Tech:** PHP, HTML5, SASS, Gulp, JS
 

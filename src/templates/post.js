@@ -22,7 +22,7 @@ export default function Template({ data }) {
 							<Link to="/contact/">CONTACT</Link>
 						</h2>
 					</div>
-					<Marquee />
+					{/* <Marquee /> */}
 				</div>
 			</div>
 			<div className="content">

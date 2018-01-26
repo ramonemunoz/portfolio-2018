@@ -6,8 +6,7 @@ published: true
 postid: "5"
 ---
 
-OLIVERPEOPLE Page
-We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure
+Oliver peoples is an American luxury eyewear brand who incorporates the unique culture of Los Angeles in each of their products. Oliver People was established in 1987 and everyday since has been dedicated to creating high-quality products for their consumers.
 
 **Tech:** PHP, SASS, Grunt, JS
 

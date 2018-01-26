@@ -11,7 +11,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">LINKEDIN</a>
+					<a href="https://www.linkedin.com/in/ramonemunoz/" target="_blank">
+						LINKEDIN
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="#">RESUME</a>
@@ -22,7 +24,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">LINKEDIN</a>
+					<a href="https://www.linkedin.com/in/ramonemunoz/" target="_blank">
+						LINKEDIN
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="#">RESUME</a>
@@ -33,7 +37,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">LINKEDIN</a>
+					<a href="https://www.linkedin.com/in/ramonemunoz/" target="_blank">
+						LINKEDIN
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="#">RESUME</a>
@@ -44,7 +50,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">LINKEDIN</a>
+					<a href="https://www.linkedin.com/in/ramonemunoz/" target="_blank">
+						LINKEDIN
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="#">RESUME</a>
@@ -54,40 +62,56 @@ const Marquee = () => (
 		<div className="Marquee">
 			<div className="Marquee-content-two">
 				<div className="Marquee-tag">
-					<a href="#">POST</a>
+					<a href="http://posssst.com/" target="_blank">
+						POST
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="#">12TH STUDIO</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">INSTAGRAM</a>
+					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
+						INSTAGRAM
+					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">POST</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="#">12TH STUDIO</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="#">INSTAGRAM</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="#">POST</a>
+					<a href="http://posssst.com/" target="_blank">
+						POST
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="#">12TH STUDIO</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">INSTAGRAM</a>
+					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
+						INSTAGRAM
+					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">POST</a>
+					<a href="http://posssst.com/" target="_blank">
+						POST
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="#">12TH STUDIO</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">INSTAGRAM</a>
+					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
+						INSTAGRAM
+					</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="http://posssst.com/" target="_blank">
+						POST
+					</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="#">12TH STUDIO</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
+						INSTAGRAM
+					</a>
 				</div>
 			</div>
 		</div>
