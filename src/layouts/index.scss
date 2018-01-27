@@ -226,11 +226,35 @@ html {
 	padding: 0 15%;
 }
 
+.down-arrow {
+	padding-top: 25px;
+	font-size: 50px;
+}
+
 // Helper classes
 
 .show-mobile {
 	display: block;
 	@media (min-width: $breakpoint-mobile) {
 		display: none;
+	}
+}
+
+.pulsate-css {
+	animation: pulsate 2s ease-out;
+	animation-iteration-count: infinite;
+	opacity: 0;
+}
+
+@keyframes pulsate {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }

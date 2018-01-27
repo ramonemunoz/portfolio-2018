@@ -2,6 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Marquee from '../components/marquee';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor';
+
+// scroll more quickly than the default 400ms
+configureAnchors({ scrollDuration: 1000 });
 
 export default function Template({ data }) {
 	const { markdownRemark: post } = data;
@@ -21,11 +26,19 @@ export default function Template({ data }) {
 						<h2>
 							<Link to="/contact/">CONTACT</Link>
 						</h2>
+						<h2>
+							<a className="show-mobile pulsate-css down-arrow" href="#top">
+								&darr;
+							</a>
+						</h2>
 					</div>
 					{/* <Marquee /> */}
 				</div>
 			</div>
 			<div className="content">
+				<ScrollableAnchor id={'top'}>
+					<div />
+				</ScrollableAnchor>
 				<div className="col-three">
 					<div className="post-container">
 						<img src={post.frontmatter.imgmain} />
