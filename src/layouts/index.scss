@@ -79,12 +79,12 @@ html {
 	h1 {
 		text-align: center;
 		margin-bottom: 0px;
-		margin-top: 95px;
+		margin-top: 15%;
 		font-family: Helvetica, sans-serif;
 		font-size: 33px;
 		font-weight: 100;
 		@media (min-width: $breakpoint-tablet) {
-			margin-top: 200px;
+			margin-top: 25%;
 		}
 	}
 	h2 {
@@ -224,4 +224,13 @@ html {
 	margin: auto;
 	line-height: 1.3em;
 	padding: 0 15%;
+}
+
+// Helper classes
+
+.show-mobile {
+	display: block;
+	@media (min-width: $breakpoint-mobile) {
+		display: none;
+	}
 }

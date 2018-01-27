@@ -2,6 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Me from '../images/me.jpg';
 import Marquee from '../components/marquee';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor';
+
+// scroll more quickly than the default 400ms
+configureAnchors({ scrollDuration: 1000 });
 
 const ContactPage = () => (
 	<div className="container">
@@ -14,7 +19,7 @@ const ContactPage = () => (
 						<Link to="/">HOME</Link>
 					</h2>
 					<h2>
-						<Link to="/about/">ABOUT</Link>
+						<Link to="/about/#about">ABOUT</Link>
 					</h2>
 				</div>
 				<Marquee />
@@ -34,7 +39,7 @@ const ContactPage = () => (
 					<p>
 						LinkedIn:{' '}
 						<a href="https://www.linkedin.com/in/ramonemunoz/" target="_blank">
-							https://www.linkedin.com/in/ramonemunoz/
+							https://linkedin.com/ramonemunoz/
 						</a>
 					</p>
 					<p>
@@ -50,6 +55,9 @@ const ContactPage = () => (
 						</a>
 					</p>
 				</div>
+				<ScrollableAnchor id={'contact'}>
+					<div />
+				</ScrollableAnchor>
 			</div>
 		</div>
 	</div>

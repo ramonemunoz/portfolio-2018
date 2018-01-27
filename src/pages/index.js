@@ -2,6 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Me from '../images/me.jpg';
 import Marquee from '../components/marquee';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor';
+
+// scroll more quickly than the default 400ms
+configureAnchors({ scrollDuration: 1000 });
 
 const IndexPage = ({ data }) => (
 	<div className="container">
@@ -11,16 +16,24 @@ const IndexPage = ({ data }) => (
 				<img src={Me} alt="" />
 				<div className="about-link">
 					<h2>
-						<Link to="/about/">ABOUT</Link>
+						<Link to="/about/#about">ABOUT</Link>
 					</h2>
 					<h2>
-						<Link to="/contact/">CONTACT</Link>
+						<Link to="/contact/#contact">CONTACT</Link>
+					</h2>
+					<h2>
+						<a className="show-mobile" href="#work">
+							WORK
+						</a>
 					</h2>
 				</div>
 				<Marquee />
 			</div>
 		</div>
 		<div className="content">
+			<ScrollableAnchor id={'work'}>
+				<div />
+			</ScrollableAnchor>
 			{data.allMarkdownRemark.edges.map(post => (
 				<div key={post.node.frontmatter.postid} className="col-two">
 					<Link to={post.node.frontmatter.path}>
