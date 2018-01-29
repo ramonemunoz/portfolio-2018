@@ -1,7 +1,7 @@
 ---
 path: "/killspencer"
 title: "KILLSPENCER"
-imgmain: "http://via.placeholder.com/450x450?text=KILLSPENCER"
+imgmain: "./Oliverpeoples-Main.png"
 published: true
 postid: "3"
 ---

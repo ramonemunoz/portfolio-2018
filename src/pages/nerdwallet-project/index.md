@@ -1,7 +1,7 @@
 ---
 path: "/nerdwallet"
 title: "NERDWALLET"
-imgmain: "http://via.placeholder.com/450x450?text=NERDWALLET"
+imgmain: "./Oliverpeoples-Main.png"
 published: true
 postid: "4"
 ---

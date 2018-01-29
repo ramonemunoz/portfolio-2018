@@ -1,7 +1,7 @@
 ---
 path: "/post"
 title: "POST"
-imgmain: "http://via.placeholder.com/450x450?text=POST"
+imgmain: "./Oliverpeoples-Main.png"
 published: true
 postid: "1"
 ---

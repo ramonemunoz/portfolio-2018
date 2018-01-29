@@ -1,7 +1,7 @@
 ---
 path: "/armada"
 title: "ARMADA"
-imgmain: "http://via.placeholder.com/450x450?text=ARMADA"
+imgmain: "./Oliverpeoples-Main.png"
 published: true
 postid: "2"
 ---
