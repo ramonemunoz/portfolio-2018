@@ -1,7 +1,7 @@
 ---
 path: "/armada"
 title: "ARMADA"
-imgmain: "./Oliverpeoples-Main.png"
+imgmain: "./Armada-Main.png"
 published: true
 postid: "2"
 ---

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image'
 import Me from '../images/me.jpg';
 import Marquee from '../components/marquee';
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -37,7 +38,7 @@ const IndexPage = ({ data }) => (
 			{data.allMarkdownRemark.edges.map(post => (
 				<div key={post.node.frontmatter.postid} className="col-two">
 					<Link to={post.node.frontmatter.path}>
-						<img src={post.node.frontmatter.imgmain} />
+					<Img sizes={post.node.frontmatter.imgmain.childImageSharp.sizes} />
 					</Link>
 				</div>
 			))}
@@ -59,7 +60,13 @@ export const pageQuery = graphql`
 					frontmatter {
 						path
 						title
-						imgmain
+						imgmain{
+							childImageSharp{
+								sizes(maxWidth: 630) {
+									...GatsbyImageSharpSizes
+								}
+							}
+						}
 						published
 						postid
 					}

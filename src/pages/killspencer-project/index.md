@@ -1,7 +1,7 @@
 ---
 path: "/killspencer"
 title: "KILLSPENCER"
-imgmain: "./Oliverpeoples-Main.png"
+imgmain: "./Killspencer-Main.png"
 published: true
 postid: "3"
 ---

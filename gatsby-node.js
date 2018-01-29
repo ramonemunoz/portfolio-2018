@@ -26,10 +26,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 						id
 						frontmatter {
 							path
-							title
-							imgmain
-							published
-							postid
 						}
 					}
 				}

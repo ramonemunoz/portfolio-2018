@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image'
 import Marquee from '../components/marquee';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
@@ -41,7 +42,7 @@ export default function Template({ data }) {
 				</ScrollableAnchor>
 				<div className="col-three">
 					<div className="post-container">
-						<img src={post.frontmatter.imgmain} />
+					<Img sizes={post.frontmatter.imgmain.childImageSharp.sizes} />
 					</div>
 				</div>
 				<div className="col-two">
@@ -66,7 +67,13 @@ export const postQuery = graphql`
 			frontmatter {
 				path
 				title
-				imgmain
+				imgmain{
+					childImageSharp{
+						sizes(maxWidth: 630) {
+							...GatsbyImageSharpSizes
+						}
+					}
+				}
 				postid
 			}
 		}
