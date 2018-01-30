@@ -1,14 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
-import Img from 'gatsby-image'
+import Img from 'gatsby-image';
 import Marquee from '../components/marquee';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 
 // scroll more quickly than the default 400ms
-configureAnchors({ scrollDuration: 1000 });
-
+configureAnchors({ scrollDuration: 1000, keepLastAnchorHash: true });
 export default function Template({ data }) {
 	const { markdownRemark: post } = data;
 	return (
@@ -36,26 +35,25 @@ export default function Template({ data }) {
 					{/* <Marquee /> */}
 				</div>
 			</div>
-			<div className="content">
-				<ScrollableAnchor id={'top'}>
-					<div />
-				</ScrollableAnchor>
-				<div className="col-three">
-					<div className="post-container">
-					<Img sizes={post.frontmatter.imgmain.childImageSharp.sizes} />
+			<ScrollableAnchor id={'top'}>
+				<div className="content">
+					<div className="col-three">
+						<div className="post-container">
+							<Img sizes={post.frontmatter.hero.childImageSharp.sizes} />
+						</div>
+					</div>
+					<div className="col-two">
+						<div className="post-container">
+							<h1>{post.frontmatter.title}</h1>
+						</div>
+					</div>
+					<div className="col-two">
+						<div className="post-container">
+							<Img sizes={post.frontmatter.bodyone.childImageSharp.sizes} />
+						</div>
 					</div>
 				</div>
-				<div className="col-two">
-					<div className="post-container">
-						<h1>{post.frontmatter.title}</h1>
-					</div>
-				</div>
-				<div className="col-two">
-					<div className="post-container">
-						<h1>{post.frontmatter.title}</h1>
-					</div>
-				</div>
-			</div>
+			</ScrollableAnchor>
 		</div>
 	);
 }
@@ -67,9 +65,23 @@ export const postQuery = graphql`
 			frontmatter {
 				path
 				title
-				imgmain{
-					childImageSharp{
-						sizes(maxWidth: 630) {
+				imgmain {
+					childImageSharp {
+						sizes(maxWidth: 800) {
+							...GatsbyImageSharpSizes
+						}
+					}
+				}
+				hero {
+					childImageSharp {
+						sizes(maxWidth: 800) {
+							...GatsbyImageSharpSizes
+						}
+					}
+				}
+				bodyone {
+					childImageSharp {
+						sizes(maxWidth: 800) {
 							...GatsbyImageSharpSizes
 						}
 					}

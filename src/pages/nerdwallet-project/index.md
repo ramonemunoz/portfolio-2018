@@ -1,7 +1,9 @@
 ---
 path: "/nerdwallet"
 title: "NERDWALLET"
-imgmain: "./Oliverpeoples-Main.png"
+imgmain: "./Nerdwallet-Main.png"
+hero: "./Nerdwallet-hero.png"
+bodyone: "./coming-soon.png"
 published: true
 postid: "4"
 ---

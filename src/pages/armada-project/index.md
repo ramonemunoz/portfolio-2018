@@ -2,6 +2,8 @@
 path: "/armada"
 title: "ARMADA"
 imgmain: "./Armada-Main.png"
+hero: "./Armada-hero.png"
+bodyone: "./coming-soon.png"
 published: true
 postid: "2"
 ---

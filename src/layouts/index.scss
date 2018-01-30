@@ -74,7 +74,9 @@ html {
 	// border: 1px solid purple;
 	min-height: 100vh;
 	.about-link {
+		margin-top: auto;
 		margin-bottom: auto;
+		padding: 0 15%;
 	}
 	h1 {
 		text-align: center;
@@ -85,11 +87,10 @@ html {
 		font-weight: 100;
 		@media (min-width: $breakpoint-tablet) {
 			margin-top: 25%;
-
 		}
 	}
 	h2 {
-		text-align: center;
+		text-align: left;
 		font-family: Helvetica, sans-serif;
 		font-size: 22px;
 		padding-bottom: 15px;
@@ -129,6 +130,9 @@ html {
 	@media (min-width: $breakpoint-tablet) {
 		width: 50%;
 	}
+	.post-container {
+		padding-top: 15%;
+	}
 }
 
 .col-three {
@@ -136,6 +140,9 @@ html {
 	// border: 1px solid green;
 	line-height: 0;
 	min-height: 50vh;
+	.post-container {
+		// padding: 0 10%;
+	}
 }
 
 .col-one {
@@ -179,9 +186,16 @@ html {
 			animation-play-state: paused;
 		}
 	}
-	.Marquee-content-three {
+	.Marquee-content-two {
 		display: flex;
 		animation: marquee 9s linear infinite running;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+	.Marquee-content-three {
+		display: flex;
+		animation: marquee 8s linear infinite running;
 		&:hover {
 			animation-play-state: paused;
 		}

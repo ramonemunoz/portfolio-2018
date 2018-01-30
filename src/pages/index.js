@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Img from 'gatsby-image'
+import Img from 'gatsby-image';
 import Me from '../images/me.jpg';
 import Marquee from '../components/marquee';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 
 // scroll more quickly than the default 400ms
-configureAnchors({ scrollDuration: 1000 });
+configureAnchors({ scrollDuration: 1000, keepLastAnchorHash: true });
 
 const IndexPage = ({ data }) => (
 	<div className="container">
@@ -31,18 +31,17 @@ const IndexPage = ({ data }) => (
 				<Marquee />
 			</div>
 		</div>
-		<div className="content">
-			<ScrollableAnchor id={'work'}>
-				<div />
-			</ScrollableAnchor>
-			{data.allMarkdownRemark.edges.map(post => (
-				<div key={post.node.frontmatter.postid} className="col-two">
-					<Link to={post.node.frontmatter.path}>
-					<Img sizes={post.node.frontmatter.imgmain.childImageSharp.sizes} />
-					</Link>
-				</div>
-			))}
-		</div>
+		<ScrollableAnchor id={'work'}>
+			<div className="content">
+				{data.allMarkdownRemark.edges.map(post => (
+					<div key={post.node.frontmatter.postid} className="col-two">
+						<Link to={post.node.frontmatter.path}>
+							<Img sizes={post.node.frontmatter.imgmain.childImageSharp.sizes} />
+						</Link>
+					</div>
+				))}
+			</div>
+		</ScrollableAnchor>
 	</div>
 );
 
@@ -60,9 +59,9 @@ export const pageQuery = graphql`
 					frontmatter {
 						path
 						title
-						imgmain{
-							childImageSharp{
-								sizes(maxWidth: 630) {
+						imgmain {
+							childImageSharp {
+								sizes(maxWidth: 800) {
 									...GatsbyImageSharpSizes
 								}
 							}
