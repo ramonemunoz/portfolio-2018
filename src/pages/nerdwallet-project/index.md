@@ -1,5 +1,5 @@
 ---
-path: "/nerdwallet"
+path: "/nerdwallet/"
 title: "NERDWALLET"
 imgmain: "./Nerdwallet-Main.png"
 hero: "./Nerdwallet-hero.png"

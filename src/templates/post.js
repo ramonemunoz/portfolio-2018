@@ -3,11 +3,11 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import Marquee from '../components/marquee';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor';
+import ScrollableAnchor from '../packages/react-scrollable-anchor';
+import { configureAnchors } from '../packages/react-scrollable-anchor';
 
 // scroll more quickly than the default 400ms
-configureAnchors({ scrollDuration: 1000, keepLastAnchorHash: true });
+configureAnchors({ scrollDuration: 1000, keepLastAnchorHash: false, scrollUrlHashUpdate: false });
 export default function Template({ data }) {
 	const { markdownRemark: post } = data;
 	return (

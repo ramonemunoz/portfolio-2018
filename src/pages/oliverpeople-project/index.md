@@ -1,5 +1,5 @@
 ---
-path: "/oliverpeople"
+path: "/oliverpeople/"
 title: "OLIVERPEOPLE"
 imgmain: "./Oliverpeoples-Main.png"
 hero: "./Oliverpeoples-hero.png"

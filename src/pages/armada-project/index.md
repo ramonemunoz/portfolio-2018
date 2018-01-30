@@ -1,5 +1,5 @@
 ---
-path: "/armada"
+path: "/armada/"
 title: "ARMADA"
 imgmain: "./Armada-Main.png"
 hero: "./Armada-hero.png"

@@ -1,5 +1,5 @@
 ---
-path: "/post"
+path: "/post/"
 title: "POST"
 imgmain: "./Post-Main.png"
 hero: "./coming-soon.png"

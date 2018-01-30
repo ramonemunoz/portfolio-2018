@@ -1,5 +1,5 @@
 ---
-path: "/killspencer"
+path: "/killspencer/"
 title: "KILLSPENCER"
 imgmain: "./Killspencer-Main.png"
 hero: "./Killspencer-body-1.png"
