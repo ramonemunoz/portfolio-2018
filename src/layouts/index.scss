@@ -73,15 +73,17 @@ html {
 	flex-direction: column;
 	// border: 1px solid purple;
 	min-height: 100vh;
+	height: 100%;
 	.about-link {
 		margin-top: auto;
 		margin-bottom: auto;
 		padding: 0 15%;
 	}
 	h1 {
-		text-align: center;
+		text-align: left;
 		margin-bottom: 0px;
 		margin-top: 15%;
+		padding: 0 15%;
 		font-family: Helvetica, sans-serif;
 		font-size: 33px;
 		font-weight: 100;
@@ -100,10 +102,9 @@ html {
 		}
 	}
 	img {
-		margin: auto;
 		margin-top: 25px;
-		width: 55%;
 		margin-bottom: 50px;
+		padding: 0 15%;
 	}
 }
 

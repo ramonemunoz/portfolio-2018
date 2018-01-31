@@ -14,7 +14,9 @@ const IndexPage = ({ data }) => (
 		<div className="fixed-container">
 			<div className="about">
 				<h1>Ramon Munoz</h1>
+				<div>
 				<img src={Me} alt="" />
+				</div>
 				<div className="about-link">
 					<h2>
 						<Link to="/about/#about">ABOUT</Link>
