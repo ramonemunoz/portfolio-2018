@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
 		<div className="fixed-container">
 			<div className="about">
 				<h1>Ramon Munoz</h1>
-				<div>
+				<div className="profile-pic">
 				<img src={Me} alt="" />
 				</div>
 				<div className="about-link">
