@@ -3,7 +3,8 @@ path: "/armada/"
 title: "ARMADA"
 imgmain: "./Armada-Main.png"
 hero: "./Armada-hero.png"
-bodyone: "./coming-soon.png"
+bodyone: "./Armada-body-1.png"
+bodytwo: "./Armada-body-2.png"
 published: true
 postid: "2"
 ---

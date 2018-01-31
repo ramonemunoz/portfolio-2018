@@ -3,7 +3,8 @@ path: "/oliverpeople/"
 title: "OLIVERPEOPLE"
 imgmain: "./Oliverpeoples-Main.png"
 hero: "./Oliverpeoples-hero.png"
-bodyone: "./coming-soon.png"
+bodyone: "./Oliverpeoples-body-1.png"
+bodytwo: "./Oliverpeoples-body-2.png"
 published: true
 postid: "5"
 ---

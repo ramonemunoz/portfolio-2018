@@ -4,6 +4,7 @@ title: "POST"
 imgmain: "./Post-Main.png"
 hero: "./coming-soon.png"
 bodyone: "./coming-soon.png"
+bodytwo: "./coming-soon.png"
 published: true
 postid: "1"
 ---

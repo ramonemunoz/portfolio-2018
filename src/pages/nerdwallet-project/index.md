@@ -3,7 +3,8 @@ path: "/nerdwallet/"
 title: "NERDWALLET"
 imgmain: "./Nerdwallet-Main.png"
 hero: "./Nerdwallet-hero.png"
-bodyone: "./coming-soon.png"
+bodyone: "./Nerdwallet-body-1.png"
+bodytwo: "./Nerdwallet-body-2.png"
 published: true
 postid: "4"
 ---

@@ -44,12 +44,12 @@ export default function Template({ data }) {
 					</div>
 					<div className="col-two">
 						<div className="post-container">
-							<h1>{post.frontmatter.title}</h1>
+							<Img sizes={post.frontmatter.bodyone.childImageSharp.sizes} />
 						</div>
 					</div>
 					<div className="col-two">
 						<div className="post-container">
-							<Img sizes={post.frontmatter.bodyone.childImageSharp.sizes} />
+							<Img sizes={post.frontmatter.bodytwo.childImageSharp.sizes} />
 						</div>
 					</div>
 				</div>
@@ -80,6 +80,13 @@ export const postQuery = graphql`
 					}
 				}
 				bodyone {
+					childImageSharp {
+						sizes(maxWidth: 800) {
+							...GatsbyImageSharpSizes
+						}
+					}
+				}
+				bodytwo {
 					childImageSharp {
 						sizes(maxWidth: 800) {
 							...GatsbyImageSharpSizes

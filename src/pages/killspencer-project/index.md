@@ -2,8 +2,9 @@
 path: "/killspencer/"
 title: "KILLSPENCER"
 imgmain: "./Killspencer-Main.png"
-hero: "./Killspencer-body-1.png"
-bodyone: "./Killspencer-hero.png"
+hero: "./Killspencer-hero.png"
+bodyone: "./Killspencer-body-1.png"
+bodytwo: "./Killspencer-body-2.png"
 published: true
 postid: "3"
 ---
