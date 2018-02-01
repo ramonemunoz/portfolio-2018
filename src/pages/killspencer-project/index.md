@@ -14,3 +14,5 @@ Killspencer is an LA based manufacturing company who specializes in making high-
 **Tech:** Liquid, SASS, Gulp, JS
 
 **Framework:** Shopify
+
+**Link:** <a href="https://killspencer.com/" target="_blank">https://killspencer.com/</a>

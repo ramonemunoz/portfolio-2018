@@ -14,7 +14,7 @@ const ContactPage = () => (
 			<div className="about">
 				<h1>Ramon Munoz</h1>
 				<div className="profile-pic">
-				<img src={Me} alt="" />
+					<img src={Me} alt="" />
 				</div>
 				<div className="about-link">
 					<h2>
@@ -33,15 +33,21 @@ const ContactPage = () => (
 					<h1>Want to get in touch?</h1>
 					<p>Email: ramon@ramon-munoz.com</p>
 					<p>
+						Resume:{' '}
+						<a href="http://ramon-munoz.com/Ramon-Munoz-Resume-2018.pdf" target="_blank">
+							2018 Resume
+						</a>
+					</p>
+					<p>
 						Github:{' '}
 						<a href="https://github.com/ramonemunoz/" target="_blank">
-							https://github.com/ramonemunoz/
+							Github.com/ramonemunoz/
 						</a>
 					</p>
 					<p>
 						LinkedIn:{' '}
 						<a href="https://www.linkedin.com/in/ramonemunoz/" target="_blank">
-							https://linkedin.com/ramonemunoz/
+							Linkedin.com/ramonemunoz/
 						</a>
 					</p>
 					<p>
@@ -54,6 +60,18 @@ const ContactPage = () => (
 						Twitter:{' '}
 						<a href="https://twitter.com/ramonemunoz" target="_blank">
 							@ramonemunoz
+						</a>
+					</p>
+					<p>
+						<strong>Personal Projects</strong>
+					</p>
+					<p>
+						<a href="http://posssst.com/" target="_blank">
+							Posssst.com
+						</a>
+						<span> | </span>
+						<a href="#" target="_blank">
+							12th.com
 						</a>
 					</p>
 				</div>

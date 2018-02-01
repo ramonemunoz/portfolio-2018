@@ -2,7 +2,7 @@
 path: "/post/"
 title: "POST"
 imgmain: "./Post-Main.png"
-hero: "./coming-soon.png"
+hero: "./Post-Main.png"
 bodyone: "./coming-soon.png"
 bodytwo: "./coming-soon.png"
 published: true
@@ -14,3 +14,5 @@ I created Post as a platform where creatives, like you and I, are free to upload
 **Tech:** HTML5, CSS3, JS
 
 **Framework:** React.js
+
+**Link:** <a href="http://posssst.com/" target="_blank">http://posssst.com/</a>

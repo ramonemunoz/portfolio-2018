@@ -14,3 +14,5 @@ Oliver peoples is an American luxury eyewear brand who incorporates the unique c
 **Tech:** PHP, SASS, Grunt, JS
 
 **Framework:** Magento, Wordpress
+
+**Link:** <a href="https://oliverpeoples.com/" target="_blank">https://oliverpeoples.com/</a>

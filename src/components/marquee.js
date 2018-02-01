@@ -16,7 +16,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">RESUME</a>
+					<a href="http://ramon-munoz.com/Ramon-Munoz-Resume-2018.pdf" target="_blank">
+						RESUME
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="https://github.com/ramonemunoz" target="_blank">
@@ -29,7 +31,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">RESUME</a>
+					<a href="http://ramon-munoz.com/Ramon-Munoz-Resume-2018.pdf" target="_blank">
+						RESUME
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="https://github.com/ramonemunoz" target="_blank">
@@ -42,7 +46,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">RESUME</a>
+					<a href="http://ramon-munoz.com/Ramon-Munoz-Resume-2018.pdf" target="_blank">
+						RESUME
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="https://github.com/ramonemunoz" target="_blank">
@@ -55,7 +61,9 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">RESUME</a>
+					<a href="http://ramon-munoz.com/Ramon-Munoz-Resume-2018.pdf" target="_blank">
+						RESUME
+					</a>
 				</div>
 			</div>
 		</div>
