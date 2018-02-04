@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
-import Me from '../images/me.jpg';
+import Me from '../images/me-bw.jpg';
 import Marquee from '../components/marquee';
 import ScrollableAnchor from '../packages/react-scrollable-anchor';
 import { configureAnchors } from '../packages/react-scrollable-anchor';
@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
 			<div className="about">
 				<h1>Ramon Munoz</h1>
 				<div className="profile-pic">
-				<img src={Me} alt="" />
+					<img src={Me} alt="" />
 				</div>
 				<div className="about-link">
 					<h2>
@@ -25,9 +25,7 @@ const IndexPage = ({ data }) => (
 						<Link to="/contact/#contact">CONTACT</Link>
 					</h2>
 					<h2 className="show-mobile">
-						<a href="#work">
-							WORK
-						</a>
+						<a href="#work">WORK</a>
 					</h2>
 				</div>
 				<Marquee />

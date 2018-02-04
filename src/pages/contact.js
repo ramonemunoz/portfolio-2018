@@ -63,15 +63,11 @@ const ContactPage = () => (
 						</a>
 					</p>
 					<p>
-						<strong>Personal Projects</strong>
+						<strong>Personal Project</strong>
 					</p>
 					<p>
 						<a href="http://posssst.com/" target="_blank">
 							Posssst.com
-						</a>
-						<span> | </span>
-						<a href="#" target="_blank">
-							12th.com
 						</a>
 					</p>
 				</div>

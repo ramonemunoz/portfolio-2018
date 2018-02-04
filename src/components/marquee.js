@@ -75,7 +75,14 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">12TH STUDIO</a>
+					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
+						INSTAGRAM
+					</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="http://posssst.com/" target="_blank">
+						POST
+					</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
@@ -88,9 +95,6 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
-					<a href="#">12TH STUDIO</a>
-				</div>
-				<div className="Marquee-tag">
 					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
 						INSTAGRAM
 					</a>
@@ -99,22 +103,6 @@ const Marquee = () => (
 					<a href="http://posssst.com/" target="_blank">
 						POST
 					</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="#">12TH STUDIO</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
-						INSTAGRAM
-					</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="http://posssst.com/" target="_blank">
-						POST
-					</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="#">12TH STUDIO</a>
 				</div>
 				<div className="Marquee-tag">
 					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">

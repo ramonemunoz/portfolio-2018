@@ -82,8 +82,9 @@ html {
 		margin-top: 15%;
 		padding: 0 15%;
 		font-family: Helvetica, sans-serif;
-		font-size: 33px;
+		font-size: 40px;
 		font-weight: 100;
+		line-height: 1em;
 		@media (min-width: $breakpoint-tablet) {
 			margin-top: 25%;
 		}
@@ -91,7 +92,7 @@ html {
 	h2 {
 		text-align: left;
 		font-family: Helvetica, sans-serif;
-		font-size: 22px;
+		font-size: 28px;
 		padding-bottom: 15px;
 		font-weight: 400;
 		@media (min-width: $breakpoint-tablet) {
@@ -206,7 +207,10 @@ html {
 		a {
 			font-family: Helvetica, sans-serif;
 			color: white;
-			font-size: 33px;
+			font-size: 28px;
+			@media (min-width: $breakpoint-tablet) {
+				font-size: 33px;
+			}
 		}
 	}
 	.Marquee-tag:hover {

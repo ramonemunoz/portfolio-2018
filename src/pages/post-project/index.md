@@ -2,9 +2,9 @@
 path: "/post/"
 title: "POST"
 imgmain: "./Post-Main.png"
-hero: "./Post-Main.png"
-bodyone: "./coming-soon.png"
-bodytwo: "./coming-soon.png"
+hero: "./Post-hero.png"
+bodyone: "./Post-Main.png"
+bodytwo: "./Post-body-22.png"
 published: true
 postid: "1"
 ---
