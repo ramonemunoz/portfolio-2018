@@ -70,13 +70,8 @@ const Marquee = () => (
 		<div className="Marquee">
 			<div className="Marquee-content-two">
 				<div className="Marquee-tag">
-					<a href="http://posssst.com/" target="_blank">
-						POST
-					</a>
-				</div>
-				<div className="Marquee-tag">
-					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
-						INSTAGRAM
+					<a href="https://codepen.io/RamonE/" target="_blank">
+						CODEPEN
 					</a>
 				</div>
 				<div className="Marquee-tag">
@@ -90,6 +85,11 @@ const Marquee = () => (
 					</a>
 				</div>
 				<div className="Marquee-tag">
+					<a href="https://codepen.io/RamonE/" target="_blank">
+						CODEPEN
+					</a>
+				</div>
+				<div className="Marquee-tag">
 					<a href="http://posssst.com/" target="_blank">
 						POST
 					</a>
@@ -97,6 +97,26 @@ const Marquee = () => (
 				<div className="Marquee-tag">
 					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
 						INSTAGRAM
+					</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="https://codepen.io/RamonE/" target="_blank">
+						CODEPEN
+					</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="http://posssst.com/" target="_blank">
+						POST
+					</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="https://www.instagram.com/ramonemunoz/" target="_blank">
+						INSTAGRAM
+					</a>
+				</div>
+				<div className="Marquee-tag">
+					<a href="https://codepen.io/RamonE/" target="_blank">
+						CODEPEN
 					</a>
 				</div>
 				<div className="Marquee-tag">
